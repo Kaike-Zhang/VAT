@@ -16,7 +16,7 @@ parser.add_argument('--defense', type=str, default='VAT', help='defense')
 
 
 # dataset
-parser.add_argument('--dataset', type=str, default='gowalla', help='dataset')
+parser.add_argument('--dataset', type=str, default='Gowalla', help='dataset')
 parser.add_argument('--max_interaction', type=int, default=50, help='Max interactions')
 parser.add_argument('--min_interaction', type=int, default=10, help='Min interactions')
 
@@ -60,3 +60,19 @@ if torch.cuda.is_available() and args.use_gpu:
 else:
     args.device = torch.device("cpu")
     print('using cpu to train the model')
+
+if args.defense == "VAT":
+    if args.model == "MF":
+        if args.dataset == "Gowalla":
+            args.eps = 0.6
+        elif args.dataset == "Yelp2018":
+            args.eps = 0.5
+        elif args.dataset == "MIND":
+            args.eps = 0.4
+    elif args.model == "LighGCN":
+        if args.dataset == "Gowalla":
+            args.eps = 0.3 # or 0.4
+        elif args.dataset == "Yelp2018":
+            args.eps = 0.3 # or 0.4
+        elif args.dataset == "MIND":
+            args.eps = 0.3 # or 0.2
