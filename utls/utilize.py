@@ -60,9 +60,7 @@ class Unbuffered(object):
         return getattr(self.stream, attr)
     
 def batch_split(users, batch_size):
-    # 打乱用户列表
     random.shuffle(users)
 
-    # 分批处理
     for i in range(0, len(users), batch_size):
         yield users[i:i + batch_size]

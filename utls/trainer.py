@@ -409,12 +409,12 @@ class VATCFTrainer(CFTrainer):
         return lmabda * torch.sigmoid(torch.tensor(eps))
     
 
-class MFALATTrainer(VATCFTrainer):
+class MFVATTrainer(VATCFTrainer):
     def __init__(self, trainer_config) -> None:
         super().__init__(trainer_config)
 
 
-class LightGCNALATTrainer(VATCFTrainer):
+class LightGCNVATTrainer(VATCFTrainer):
     def __init__(self, trainer_config) -> None:
         super().__init__(trainer_config)
 
