@@ -1,5 +1,5 @@
 # VAT
-This paper has been accepted by RecSys24. [Link to the paper on Arxiv](https://arxiv.org/pdf/2409.17476)
+This paper has been accepted by RecSys24. [Link to the paper on Arxiv](https://arxiv.org/pdf/2409.17476) / [Link to the paper on ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3640457.3688120)
 
 ## Authors
 - **Kaike Zhang**
