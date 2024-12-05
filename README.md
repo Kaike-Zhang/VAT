@@ -40,9 +40,10 @@ Recommender systems play a pivotal role in mitigating information overload in va
 If you find our work useful, please cite our paper using the following BibTeX:
 
 ```bibtex
-@article{zhang2024improving,
-  title={Improving the Shortest Plank: Vulnerability-Aware Adversarial Training for Robust Recommender System},
+@inproceedings{zhang2024improving,
+  title={Improving the shortest plank: Vulnerability-aware adversarial training for robust recommender system},
   author={Zhang, Kaike and Cao, Qi and Wu, Yunfan and Sun, Fei and Shen, Huawei and Cheng, Xueqi},
-  journal={arXiv preprint arXiv:2409.17476},
+  booktitle={Proceedings of the 18th ACM Conference on Recommender Systems},
+  pages={680--689},
   year={2024}
 }
